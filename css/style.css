@@ -5,47 +5,59 @@
   text-decoration: none;
 }
 
-
-
 body {
 
-  font-family: montserrat; 
+  font-family:'Open Sans', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
 }
 
-nav {
+header {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+  background-color: rgb(245, 177, 210); /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(86, 201, 254), rgb(140, 103, 137));
+}
 
-  background: rgba(91, 99, 91, 0.15);
-  height: 80px;
+ul {
+  display: flex;
+  list-style-type: none;
+}
+/*0 targets the top and bottom and 20px for right and left */
+ul li a { 
+   padding:0 20px;
+   text-decoration: none;
+   color: blueviolet;
+   display: inline-block;
+}
+li a ::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 0;
+  background: #c4c4f7;
+  transition: all 5.s;
+}
+li a:hover::after {
   width: 100%;
-
 }
 
-
-label.logo  {
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-
+.hero-banner {
+  background-color: rgb(99, 91, 95); /* For browsers that do not support gradients */
+  background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg");
+  height: 120px;
+  color: #c4c4f7;
+  text-align: right;
+  align-items: ;
 }
 
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li {
-display: inline-block;
-line-height: 80px;
-margin: 0 5px;
-
-}
-
-nav ul li a {
-  color:white;
-  font-size: 17px;
-  text-transform: uppercase;
+.page-wrapper {
+display: grid;
+margin-right: auto;
+margin-left: auto;
+grid-template-columns: 1fr 3fr;
+grid-row: 3fr 3fr 2fr;
 }
 
 h1,
